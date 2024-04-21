@@ -3,8 +3,8 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
+  <title>Github Search App</title>
+  
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
@@ -12,22 +12,32 @@
 
     <h2>GitHub Search</h2>
 
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
+    <form id='form'>
+      <input id='search' type='text' name='search' placeholder="search user by username">
       <input type='submit' name='submit'/>
     </form>
 
-    <div id='github-container'>
-      <ul id='user-list'>
+    <!-- <div class='card' id='github-container'>
+      <div>
+        <img src="" alt="#" class="avatar">
+      </div>
+      <div class="user-info">
+          <h2>User name</h2>
+          <P id="test">user bio</P>
+          <ul id='user-list' class="user-info">
+            <li>1<strong> Followers</strong></li>
+            <li>0<strong> Following</strong></li>
+            <li>70<strong> Repositories</strong></li>
+          </ul>
+          <div id='repos' class="repo"></div>
+      </div>
+    </div>-->
 
-      </ul>
+  </div> 
 
-      <ul id='repos-list'>
+<main id="id"></main>
 
-      </ul>
-    </div>
-
-  </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src='js/index.js'></script>
 </body>
 </html>

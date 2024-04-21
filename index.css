@@ -9,5 +9,64 @@
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400;
+}
+.card{
+  max-width: 800px;
+  background-image: linear-gradient(315deg, #d15e41 0%, #a23b72 37%, #2e86ab 100%);
+  border-radius: 15px;
+  display: flex;
+  padding: 5rem;
+  margin: 10px 5rem;
+}
+.avatar{
+  border-radius: 10%;
+  border: 4px solid #293039;
+  height: 150px;
+  width: 150px;
+}
+.user-info{
+  color: #fff;
+  margin-left: 2rem;
+}
+.user-info h2{
+  margin-top: 0;
+}
+.user-info ul li strong{
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.user-info ul li{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.repo{
+  text-decoration: none;
+  color: #fff;
+  background-color: #293039;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 500px){
+  .card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .form{
+    max-width: 400;
+  }
+  .user-info{
+    margin-left: 0;
+  }
+
 }
